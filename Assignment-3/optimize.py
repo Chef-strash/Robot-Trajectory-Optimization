@@ -16,6 +16,7 @@ def cubic_trajectory(q0, qf, T, t):
     a2 = 3*(qf - q0)/T**2
     a3 = -2*(qf - q0)/T**3
     return a0 + a1*t + a2*t**2 + a3*t**3
+    # return (qf - q0)*t + q0
 
 q1_poly = cubic_trajectory(q_start[0], q_end[0], T, time)
 q2_poly = cubic_trajectory(q_start[1], q_end[1], T, time)
